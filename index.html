@@ -21,11 +21,10 @@
 <body>
     <header>
       <nav class="navbar bg-dark">
-          <div class="container-fluid">
+          <div class="container">
             <a class="navbar-brand text-white" href="#">
-              <img src="./github.com/delucymartinez/tpintegradorPHP-FRONTEND-2022-2/blob/a0e6c935098033d3130daeec6ccf1f4dfe37afde/codoacodo.png" alt="Logo" width="30%" class="d-inline-block align-center-top">
-            Conf Bs As</a>
-              <nav class="navbar navbar-expand-lg">
+              <img src="imagenes_integrador_front/imagenes_integrador_front/codoacodo.png" alt="Logo" width="30%" class="align-center-top">Conf Bs As</a>
+              <nav class="navbar navbar-expand-sm">
                 <div class="navbar-nav align-center-top" >
                       <a class="nav-link text-white">La Conferencia</a>
                       <a class="nav-link text-white" href="#">Los oradores</a>
@@ -38,17 +37,19 @@
               </div>
         </nav>
     </header>
-<section>  
-    <div class="card align-bottom text-end rounded-0">
-      <img src="./ba1.jpg" class="card-img rounded-0 bg dark opacity-70" alt="Palacio Obras Sanitarias">
-      <div class="card-img-overlay mb-auto">
-        <h5 class="card-title text-white ">Conf Bs As</h5>
-        <p class="card-text-end text-white">Llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
-        <button type="button" class="btn btn-outline-light">Quiero ser Orador</button>
-        <button type="button" class="btn btn-success">Comprar Tickets</button> 
-      </div>
-      </div>   
-  </div>    
+<section>
+  <div class="card text rounded-0 bg-dark">
+    <img src="./imagenes_integrador_front/imagenes_integrador_front/ba1.jpg" class="card-img rounded-0 container-flex" style="opacity:.35" alt="Palacio Obras Sanitarias">
+        <div class="card-img-overlay">
+          <div class="parrafoAguas">
+            <h3 class="card-title text-white">Conf Bs As</h3>
+             <p class="card-text text-white">Llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!</p>
+            <button type="button" class="btn btn-outline-light">Quiero ser Orador</button>
+            <button type="button" class="btn btn-success">Comprar Tickets</button> 
+          </div>
+        </div> 
+    </div>
+  </div>
 </section>
 <br>
 <main>
@@ -100,9 +101,8 @@
       </div>
       <div class="col-md-6 bg-dark">
         <div class="card-body">
-          <h5 class="card-title text-white">Bs As - Octubre</h5>
-          <p class="card-text text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).
-            .</p>
+          <h5 class="card-title text-white col-md-6">Bs As - Octubre</h5>
+          <p class="card-text text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
           <button type="button" class="btn btn-outline-light">Conocé más</button>
         </div>
       </div>
@@ -115,34 +115,42 @@
       <h5 class="card-title row justify-content-md-center">CONVIERTETE EN UN</h5>
       <h2 class="card-title row justify-content-md-center">ORADOR</h2>
     </div>
-    <br>
+    <br> 
     <form class="form-inline">
       <div class="form-group mt-4 mb-4 p-2 col-6 mx-auto">    
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Anotate como un orador para dar una charla ignite. Cuéntanos de qué quieres hablar!">
-      </div>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Anotate como un orador para dar una charla ignite. Cuéntanos de qué quieres hablar!">
+        </div>
      <div class="form-group mt-4 mb-4 p-2 col-6 mx-auto">
-            <input type="name" class="form-control" id="inputname" placeholder="Nombre">
-            <input type="name" class="form-control" id="inputname" placeholder="Apellido">
-            <input type="name" class="form-control" id="inputname" placeholder="Sobre qué quieres hablar?"> Recuerda incluir un título para tu charla.
+      <div class="row">
+        <div class="col-6"> 
+          <input type="name" class="form-control" id="inputname" placeholder="Nombre"> 
+        </div>
+        <div class="col-6"> 
+          <input type="surname" class="form-control" id="inputname" placeholder="Apellido"> 
+        </div>
+        <div class="col-12 mt-2"> 
+        <input type="text" class="form-control" id="inputname" placeholder="Sobre qué quieres hablar?"> Recuerda incluir un título para tu charla.
+        </div>
       </div>
-      <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="botonEnviar text-white border-0">Enviar</button>
+      </div>
+    </div>
+      <div class="d-grid p-2 col-6 mx-auto">
+        <button class="botonEnviar text-white col-12 border-0">Enviar</button>
         </div>
       </form>
 </section>    
 <br>
 <footer>
 <nav class="navbarDeAbajo">
-  <nav class="nav justify-content-center">
+  <nav class="container">
       <div class="navbar">
-            <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
-            <a class="nav-link text-white" href="#">Contactenos</a>
-            <a class="nav-link text-white" href="#">Prensa</a>
-            <a class="nav-link text-white" href="#">Conferencias</a>
-            <a class="nav-link text-white" href="#">Términos y Condiciones</a>
-            <a class="nav-link text-white" href="#">Privacidad</a>
-            <a class="nav-link text-white" href="#">Estudiantes</a> 
+            <a class="nav-link text-white col-1" href="#">Preguntas frecuentes</a>
+            <a class="nav-link text-white col-1" href="#">Contactenos</a>
+            <a class="nav-link text-white col-1" href="#">Prensa</a>
+            <a class="nav-link text-white col-1" href="#">Conferencias</a>
+            <a class="nav-link text-white col-1" href="#">Términos y Condiciones</a>
+            <a class="nav-link text-white col-1" href="#">Privacidad</a>
+            <a class="nav-link text-white col-1" href="#">Estudiantes</a> 
       </div>
   </nav>
 </nav>
