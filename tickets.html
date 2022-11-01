@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- JS script -->
+
+    <title>Document</title>
+    <link rel="JavaScript" href="scripts.js">
+</head>
+<body>
+    <header>
+      <nav class="navbar bg-dark">
+          <div class="container-sm">
+            <a class="navbar-brand text-white" href="#">
+              <img src="imagenes_integrador_front/imagenes_integrador_front/codoacodo.png" alt="Logo" width="30%" class="align-center-top-sm">Conf Bs As</a>
+              <nav class="navbar navbar-expand-sm">
+                <div class="collapse navbar-collapse">
+                <div class="navbar-nav align-center-top" >
+                      <a class="nav-link text-white">La Conferencia</a>
+                      <a class="nav-link text-white" href="#">Los oradores</a>
+                      <a class="nav-link text-white" href="#">El Lugar y fecha</a>
+                      <a class="nav-link text-white" href="#">Conviértete en Orador</a>
+                      <a class="nav-link text-success" href="tickets.html">Comprar Tickets</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+<br>    
+<main>
+    <main class="container-flex">
+            <div class="row">
+            <div class="card-group container col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Estudiante</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                        <p class="card-text">80%</p>
+                        <p class="card-text">*presentar documentación</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Trainee</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                        <p class="card-text">50%</p>
+                        <p class="card-text">*presentar documentación</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Junior</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                        <p class="card-text">15%</p>
+                        <p class="card-text">*presentar documentación</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+           
+         
+      </main>
+</main> 
+<br>
+<main class="container-sm mt-4 mb-4 p-2">
+    <div>
+      <h5 class="card-title row justify-content-sm-center">VENTA</h5>
+      <h2 class="card-title row justify-content-sm-center">VALOR DEL TICKET $200</h2>
+    </div>   
+
+<section>
+    <form class="form-inline-sm">   
+        <div class="form-group mt-4 mb-4 p-2 col-6 mx-auto">
+            <div class="row">
+                <div class="col-sm-6"> 
+                <input type="name" class="form-control" id="InputNombre" placeholder="Nombre"> 
+                </div>
+                <div class="col-sm-6"> 
+                <input type="surname" class="form-control" id="InputApellido" placeholder="Apellido"> 
+                </div>
+                <div class="col-12 mt-2 mb-4"> 
+                <input type="text" class="form-control" id="InputEmail" placeholder="Correo"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="cantidadTickets" class="form-label">Cantidad</label>
+                    <input type="cantidad" class="form-control" id="inputnumber" placeholder="cantidad"> 
+                </div>
+                <div class="col-sm-6">
+                    <label for="categoriaTickets" class="form-label">Categoria</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="0">Sin Categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="alert alert-primary mt-4 mb-4 p-2 col-sm-12" role="total">
+                Total a pagar: $
+              </div>
+            <div class="row">
+                <button class="botonBorrar text-white mt-4 mb-2 p-0 col-sm-6 border-0">Borrar</button> 
+                <button class="botonResumen text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonResumen">Resumen</button>
+            </div>
+        </div>
+        <div>
+            <p id="pmensajeNombre" class="text-danger"></p>
+            <p id="pmensajeApellido" class="text-danger"></p>
+            <p id="pmensajeEmail"></p>
+        </div>
+
+    </form>
+</section>    
+<br>
+<footer>
+<nav class="navbarDeAbajo">
+  <nav class="container-fluid">
+      <div class="navbar">
+            <a class="nav-link text-white col-1" href="#">Preguntas frecuentes</a>
+            <a class="nav-link text-white col-1" href="#">Contactenos</a>
+            <a class="nav-link text-white col-1" href="#">Prensa</a>
+            <a class="nav-link text-white col-1" href="#">Conferencias</a>
+            <a class="nav-link text-white col-1" href="#">Términos y Condiciones</a>
+            <a class="nav-link text-white col-1" href="#">Privacidad</a>
+            <a class="nav-link text-white col-1" href="#">Estudiantes</a> 
+      </div>
+  </nav>
+</nav>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> 
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+https://github.com/pazspera/codo-a-codo-entrega-2
+
+/*
+    Una persona se puede jubilar:
+        - Si es mujer y tiene 60 años o más VERDADERA
+        O
+        - Si es hombre y tiene 65 años o más
+*/
+
+
+
+
+if (genero == "f" && edad >= 60){
+    document.write("Se puede Jubilar");
+} else if(genero == "m" && edad >= 65){
+    document.write("Se puede Jubilar");
+} else {
+    document.write("No se puede Jubilar");
+}
+
+
+if (genero == "f" && edad >= 60 || edad >= 65){
+    document.write("Se puede Jubilar");
+} else {
+    document.write("No se puede Jubilar");
+}
+
+switch () { case n: code block break; 
+    default: code block}
+
+ for (let:Estudiante; )   
+
+function sumar(numero1, numero2){
+    let sumafc;
+    sumafc = numero1 + numero2;
+    return sumafc;
+}
+
+function suma(numero1, numero2) {
+    return numero1 + numero2;
+    }
+    
+    console.log(suma(3,5)); //mostrará en la consola el valor 8
+
+
+//console.log(numero1);
+
+console.log(sumar(3,5));
+
+----------------------
+
+
+if (categoriaTickets == "Estudiante"){
+    document.return(40*cantidadTickets);
+} else if(categoriaTickets == "Trainee"){
+    document.return(100*cantidadTickets);
+} else if(categoriaTickets == "Junior"){
+    document.return(170*cantidadTickets);
+} else if(categoriaTickets == "Sin Categoria"){
+        document.return(1*cantidadTickets);
+}
+
+function ticketEstudiante (numero1, porcentaje){
+    let multiplicarEstudiante;
+   multiplicarEstudiante = numero1*porcentaje;
+    return multiplicarEstudiante;
+}
+
+
++(200*1)*cantidad
+
++(200*0.2)*cantidad
+
++(200*0.5)*cantidad
+
+++(200*0.85)*cantidad
+
+Var PrecioTicket = darprecio ($)
+Console.log(PrecioTicket($))
+
+var form = document.querySelector('form');
+var fname = document.getElementById('fname');
+var lname = document.getElementById('lname');
+var submit = document.getElementById('submit');
+var para = document.querySelector('p');
+form.onsubmit = function(e) {
+if (fname.value === '' || lname.value === '') {
+e.preventDefault();
+para.textContent = 'Completá ambos datos!';
+
+
+//validar formulario Orador
+const InputNombre = document.getElementById("InputNombre");
+
+const InputApellido = document.getElementById("InputApellido");
+
+const InputEmail = document.getElementById("InputEmail");
+
+const pMensajeNombre = document.getElementById("mensajeNombre");
+
+const pMensajeApellido = document.getElementById("mensajeApellido");
+
+const pMensajeEmail = document.getElementById("mensajeEmail");
+
+const botonResumen = document.getElementById("botonResumen");
+
+const expRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+
+
+function validarNombre() {
+    if (InputNombre.value.length < 3) {
+        pMensajeNombre.innerHTML = "Ingrese un nombre válido";
+    }
+    else {
+        pMensajeNombre.innerHTML = "Nombre correcto";
+    }
+}
+
+function validarApellido() {
+    if (InputApellido.value.length < 3) {
+        pMensajeApellido.innerHTML = "Ingrese un apellido válido";
+    }
+    else {
+        pMensajeApellido.innerHTML = "Nombre correcto";
+    }
+}
+
+function validarEmail() {
+    if (!expRegular.test(InputEmail.value)) {
+        pMensajeEmail.innerHTML = "El email no es valido";
+    }
+    else {
+        pMensajeEmail.innerHTML = "Email correcto";
+    }
+}
+
+botonResumen.addEventListener ("click", validarNombre);
+
+botonResumen.addEventListener ("click", validarApellido);
+
+botonResumen.addEventListener ("click", validarEmail);
+
+console.log(pMensajeApellido)
