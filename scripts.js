@@ -15,5 +15,5 @@ if (categoriaTickets == "Estudiante"){
 }
 }
 
-console.log (totalPrecio(1, 'Sin Categoria'))
+console.log (totalPrecio(1, "Sin Categoria"))
  
