@@ -11,9 +11,9 @@ if (categoriaTickets == "Estudiante"){
 } else if(categoriaTickets == "Junior"){
     document.return(170*cantidadTickets);
 } else if(categoriaTickets == "Sin Categoria"){
-        document.return(1*cantidadTickets);
+        document.return(200*cantidadTickets);
 }
 }
 
-console.log (totalPrecio)
+console.log (totalPrecio(1, 'Sin Categoria'))
  
