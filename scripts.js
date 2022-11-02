@@ -1,5 +1,9 @@
+const cantidadTickets=document.getElementById("inputnumber").value
+const categoriaTickets=document.getElementById("categoriaTickets").value 
+const botonResumen = document.getElementById("botonResumen")
 
-addEventListener ("click", totalPrecio)
+botonResumen.addEventListener("click", totalPrecio);
+
 //calcular entradas
 
 
