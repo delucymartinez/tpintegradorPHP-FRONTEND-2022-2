@@ -47,7 +47,7 @@
     <main class="container-flex">
             <div class="row">
             <div class="card-group container col-sm-6">
-                <div class="card">
+                <div class="card border-primary">
                     <div class="card-body">
                         <h5 class="card-title">Estudiante</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
@@ -55,7 +55,7 @@
                         <p class="card-text">*presentar documentación</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card border-sucess">
                     <div class="card-body">
                         <h5 class="card-title">Trainee</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
@@ -63,7 +63,7 @@
                         <p class="card-text">*presentar documentación</p>
                         </div>
                 </div>
-                <div class="card">
+                <div class="card border-warning">
                     <div class="card-body">
                         <h5 class="card-title">Junior</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
@@ -104,12 +104,12 @@
                     <input type="cantidad" class="form-control" id="inputnumber" placeholder="cantidad"> 
                 </div>
                 <div class="col-sm-6">
-                    <label for="categoriaTickets" class="form-label">Categoria</label>
+                    <label for="categoriaTickets" class="form-label" id="categoriaTickets">Categoria</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="0">Sin Categoria</option>
-                        <option value="1">Estudiante</option>
-                        <option value="2">Trainee</option>
-                        <option value="3">Junior</option>
+                        <option value="SC">Sin Categoria</option>
+                        <option value="E">Estudiante</option>
+                        <option value="T">Trainee</option>
+                        <option value="J">Junior</option>
                     </select>
                 </div>
             </div>
