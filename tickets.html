@@ -26,7 +26,7 @@
       <nav class="navbar bg-dark">
           <div class="container-sm">
             <a class="navbar-brand text-white" href="#">
-              <img src="imagenes_integrador_front/imagenes_integrador_front/codoacodo.png" alt="Logo" width="30%" class="align-center-top-sm">Conf Bs As</a>
+              <img src="./codoacodo.png" alt="Logo" width="30%" class="align-center-top-sm">Conf Bs As</a>
               <nav class="navbar navbar-expand-sm">
                 <div class="collapse navbar-collapse">
                 <div class="navbar-nav align-center-top" >
@@ -152,146 +152,7 @@
 </body>
 </html>
 
-https://github.com/pazspera/codo-a-codo-entrega-2
-
-/*
-    Una persona se puede jubilar:
-        - Si es mujer y tiene 60 años o más VERDADERA
-        O
-        - Si es hombre y tiene 65 años o más
-*/
 
 
 
 
-if (genero == "f" && edad >= 60){
-    document.write("Se puede Jubilar");
-} else if(genero == "m" && edad >= 65){
-    document.write("Se puede Jubilar");
-} else {
-    document.write("No se puede Jubilar");
-}
-
-
-if (genero == "f" && edad >= 60 || edad >= 65){
-    document.write("Se puede Jubilar");
-} else {
-    document.write("No se puede Jubilar");
-}
-
-switch () { case n: code block break; 
-    default: code block}
-
- for (let:Estudiante; )   
-
-function sumar(numero1, numero2){
-    let sumafc;
-    sumafc = numero1 + numero2;
-    return sumafc;
-}
-
-function suma(numero1, numero2) {
-    return numero1 + numero2;
-    }
-    
-    console.log(suma(3,5)); //mostrará en la consola el valor 8
-
-
-//console.log(numero1);
-
-console.log(sumar(3,5));
-
-----------------------
-
-
-if (categoriaTickets == "Estudiante"){
-    document.return(40*cantidadTickets);
-} else if(categoriaTickets == "Trainee"){
-    document.return(100*cantidadTickets);
-} else if(categoriaTickets == "Junior"){
-    document.return(170*cantidadTickets);
-} else if(categoriaTickets == "Sin Categoria"){
-        document.return(1*cantidadTickets);
-}
-
-function ticketEstudiante (numero1, porcentaje){
-    let multiplicarEstudiante;
-   multiplicarEstudiante = numero1*porcentaje;
-    return multiplicarEstudiante;
-}
-
-
-+(200*1)*cantidad
-
-+(200*0.2)*cantidad
-
-+(200*0.5)*cantidad
-
-++(200*0.85)*cantidad
-
-Var PrecioTicket = darprecio ($)
-Console.log(PrecioTicket($))
-
-var form = document.querySelector('form');
-var fname = document.getElementById('fname');
-var lname = document.getElementById('lname');
-var submit = document.getElementById('submit');
-var para = document.querySelector('p');
-form.onsubmit = function(e) {
-if (fname.value === '' || lname.value === '') {
-e.preventDefault();
-para.textContent = 'Completá ambos datos!';
-
-
-//validar formulario Orador
-const InputNombre = document.getElementById("InputNombre");
-
-const InputApellido = document.getElementById("InputApellido");
-
-const InputEmail = document.getElementById("InputEmail");
-
-const pMensajeNombre = document.getElementById("mensajeNombre");
-
-const pMensajeApellido = document.getElementById("mensajeApellido");
-
-const pMensajeEmail = document.getElementById("mensajeEmail");
-
-const botonResumen = document.getElementById("botonResumen");
-
-const expRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-
-
-function validarNombre() {
-    if (InputNombre.value.length < 3) {
-        pMensajeNombre.innerHTML = "Ingrese un nombre válido";
-    }
-    else {
-        pMensajeNombre.innerHTML = "Nombre correcto";
-    }
-}
-
-function validarApellido() {
-    if (InputApellido.value.length < 3) {
-        pMensajeApellido.innerHTML = "Ingrese un apellido válido";
-    }
-    else {
-        pMensajeApellido.innerHTML = "Nombre correcto";
-    }
-}
-
-function validarEmail() {
-    if (!expRegular.test(InputEmail.value)) {
-        pMensajeEmail.innerHTML = "El email no es valido";
-    }
-    else {
-        pMensajeEmail.innerHTML = "Email correcto";
-    }
-}
-
-botonResumen.addEventListener ("click", validarNombre);
-
-botonResumen.addEventListener ("click", validarApellido);
-
-botonResumen.addEventListener ("click", validarEmail);
-
-console.log(pMensajeApellido)
