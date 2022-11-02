@@ -2,6 +2,7 @@
 addEventListener ("click", totalPrecio)
 //calcular entradas
 
+
  function totalPrecio(cantidadTickets, categoriaTickets) {
        
 if (categoriaTickets == "Estudiante"){
