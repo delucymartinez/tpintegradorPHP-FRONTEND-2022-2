@@ -1,4 +1,4 @@
-const cantidadTickets = document.getElementById("inputnumber").value
+const cantidadTickets = document.getElementById("inputCantidad").value
 const categoriaTickets = document.getElementById("categoriaTickets").value 
 const botonResumen = document.getElementById("botonResumen")
 const botonBorrar = document.getElementById("botonBorrar")
@@ -21,5 +21,5 @@ if (categoriaTickets == "E"){
 }
 }
 
-console.log (totalPrecio(1, "Sin Categoria"))
+console.log (totalPrecio(3, "J"))
  
