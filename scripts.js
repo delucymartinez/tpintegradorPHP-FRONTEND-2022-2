@@ -1,9 +1,11 @@
 const cantidadTickets = document.getElementById("inputCantidad").value
 const categoriaTickets = document.getElementById("categoriaTickets").value 
+const formulario = document.getElementById("formulario").value 
 const botonResumen = document.getElementById("botonResumen")
 const botonBorrar = document.getElementById("botonBorrar")
+const total = document.getElementById("total")
 
-botonResumen.addEventListener("click", totalPrecio);
+
 
 //calcular entradas
 
@@ -21,5 +23,14 @@ if (categoriaTickets == "E"){
 }
 }
 
-console.log (totalPrecio(3, "J"))
- 
+
+
+
+botonResumen.addEventListener("click", totalPrecio);
+total.innerHTML = (totalPrecio);
+
+// Reset formulario
+botonBorrar.addEventListener("click", "formulario".reset)
+
+
+console.log (3,"E")
