@@ -11,13 +11,13 @@ botonResumen.addEventListener("click", totalPrecio);
  function totalPrecio (cantidadTickets, categoriaTickets) {
        
 if (categoriaTickets == "E"){
-    document.return(40*cantidadTickets);
+    return(40*cantidadTickets);
 } else if(categoriaTickets == "T"){
-    document.return(100*cantidadTickets);
+    return(100*cantidadTickets);
 } else if(categoriaTickets == "J"){
-    document.return(170*cantidadTickets);
+    return(170*cantidadTickets);
 } else if(categoriaTickets == "SC"){
-        document.return(200*cantidadTickets);
+    return(200*cantidadTickets);
 }
 }
 
