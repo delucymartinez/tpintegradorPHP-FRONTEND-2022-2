@@ -1,21 +1,22 @@
 const cantidadTickets=document.getElementById("inputnumber").value
 const categoriaTickets=document.getElementById("categoriaTickets").value 
 const botonResumen = document.getElementById("botonResumen")
+const botonBorrar = document.getElementById("botonBorrar")
 
 botonResumen.addEventListener("click", totalPrecio);
 
 //calcular entradas
 
 
- function totalPrecio(cantidadTickets, categoriaTickets) {
+ function totalPrecio (cantidadTickets, categoriaTickets) {
        
-if (categoriaTickets == "Estudiante"){
+if (categoriaTickets == "E"){
     document.return(40*cantidadTickets);
-} else if(categoriaTickets == "Trainee"){
+} else if(categoriaTickets == "T"){
     document.return(100*cantidadTickets);
-} else if(categoriaTickets == "Junior"){
+} else if(categoriaTickets == "J"){
     document.return(170*cantidadTickets);
-} else if(categoriaTickets == "Sin Categoria"){
+} else if(categoriaTickets == "SC"){
         document.return(200*cantidadTickets);
 }
 }
