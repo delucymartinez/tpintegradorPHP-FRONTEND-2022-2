@@ -1,5 +1,5 @@
-const cantidadTickets=document.getElementById("inputnumber").value
-const categoriaTickets=document.getElementById("categoriaTickets").value 
+const cantidadTickets = document.getElementById("inputnumber").value
+const categoriaTickets = document.getElementById("categoriaTickets").value 
 const botonResumen = document.getElementById("botonResumen")
 const botonBorrar = document.getElementById("botonBorrar")
 
