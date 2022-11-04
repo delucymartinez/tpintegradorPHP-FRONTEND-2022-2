@@ -1,36 +1,77 @@
-const cantidadTickets = document.getElementById("inputCantidad").value
-const categoriaTickets = document.getElementById("categoriaTickets").value 
-const formulario = document.getElementById("formulario").value 
-const botonResumen = document.getElementById("botonResumen")
-const botonBorrar = document.getElementById("botonBorrar")
-const total = document.getElementById("total")
-
-
-
 //calcular entradas
 
+const cantidadTickets = document.getElementById("cantidadTickets").value
+const categoriaTickets = document.getElementById("categoriaTickets").value 
 
- function totalPrecio (cantidadTickets, categoriaTickets) {
-       
-if (categoriaTickets == "E"){
-    return(40*cantidadTickets);
-} else if(categoriaTickets == "T"){
-    return(100*cantidadTickets);
-} else if(categoriaTickets == "J"){
-    return(170*cantidadTickets);
-} else if(categoriaTickets == "SC"){
-    return(200*cantidadTickets);
-}
-}
-
-
-
-
+const botonResumen = document.getElementById("botonResumen");
 botonResumen.addEventListener("click", totalPrecio);
-total.innerHTML = (totalPrecio);
+
+
+const total = document.getElementById("total").value
+
+
+
+function totalPrecio (cantidadTickets, categoriaTickets) {    
+if (categoriaTickets == "Estudiante"){
+    return(40*cantidadTickets).innerHTML;
+} else if(categoriaTickets == "Trainee"){
+    return(100*cantidadTickets).innerHTML;
+} else if(categoriaTickets == "Junior"){
+    return(170*cantidadTickets).innerHTML;
+} else if(categoriaTickets == "SinCategoria"){
+    return(200*cantidadTickets).innerHTML;
+}
+}
+
 
 // Reset formulario
-botonBorrar.addEventListener("click", "formulario".reset)
+const formulario = document.getElementById("formulario").value 
+const botonBorrar = document.getElementById("botonBorrar");
+botonBorrar.addEventListener("click", borrarFormulario)
+function borrarFormulario() {document.getElementById("formulario").reset();}
 
 
-console.log (3,"E")
+//validar formulario 
+inputNombre = document.getElementById("inputNombre");
+inputApellido = document.getElementById("inputApellido");
+inputEmail = document.getElementById("inputEmail");
+pMensajeNombre = document.getElementById("pmensajeNombre");
+pMensajeApellido = document.getElementById("pmensajeApellido");
+pMensajeEmail = document.getElementById("pmensajeEmail");
+
+expRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+
+
+
+
+botonResumen.addEventListener("click", validarNombre);
+botonResumen.addEventListener("click", validarApellido);
+botonResumen.addEventListener("click", validarEmail);
+
+function validarNombre() {
+    if (inputNombre.value.length < 3) {
+        pMensajeNombre.innerHTML = "Ingrese un nombre válido";
+    }
+    else {
+        pMensajeNombre.innerHTML = "";
+    }
+}
+
+function validarApellido() {
+    if (inputNombre.value.length < 3) {
+        pMensajeApellido.innerHTML = "Ingrese un apellido válido";
+    }
+    else {
+        pMensajeNombre.innerHTML = "";
+    }
+}
+
+
+function validarEmail() {
+    if (!expRegular.test(InputEmail.value)) {
+        pMensajeEmail.innerHTML = "El email no es válido";
+    }
+    else {
+        pMensajeEmail.innerHTML = "";
+    }
+}
