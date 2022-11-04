@@ -85,49 +85,49 @@
     </div>   
 
 <section>
-    <form class="form-inline-sm">   
+    <form class="form-inline-sm" id="formulario">   
         <div class="form-group mt-4 mb-4 p-2 col-6 mx-auto">
             <div class="row">
                 <div class="col-sm-6"> 
-                <input type="name" class="form-control" id="inputNombre" placeholder="Nombre"> 
+                <input id="inputNombre" input type="name" class="form-control" placeholder="Nombre"> 
                 </div>
                 <div class="col-sm-6"> 
-                <input type="surname" class="form-control" id="inputApellido" placeholder="Apellido"> 
+                <input id="inputApellido"  input type="surname" class="form-control" placeholder="Apellido"> 
                 </div>
                 <div class="col-12 mt-2 mb-4"> 
-                <input type="text" class="form-control" id="inputEmail" placeholder="Correo"> 
+                <input id="inputEmail" input type="text" class="form-control"  placeholder="Correo"> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <label for="cantidadTickets" class="form-label">Cantidad</label>
-                    <input type="cantidad" class="form-control" id="inputCantidad" placeholder="cantidad"> 
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <input type="cantidad" id="cantidadTickets"class="form-control" placeholder="cantidad"> 
                 </div>
                 <div class="col-sm-6">
-                    <label for="categoriaTickets" class="form-label" id="categoriaTickets">Categoria</label>
+                    <label for="categoriaTickets" class="form-label" id="categoria">Categoria</label>
                     <select class="form-select" id="categoriaTickets" aria-label="Default select example">
-                        <option value="SC">Sin Categoria</option>
-                        <option value="E">Estudiante</option>
-                        <option value="T">Trainee</option>
-                        <option value="J">Junior</option>
+                        <option value="SinCategoria" id="SinCategoria">Sin Categoria</option>
+                        <option value="Estudiante" id="Estudiante">Estudiante</option>
+                        <option value="Trainee" id="Trainee">Trainee</option>
+                        <option value="Junior" id="Junior">Junior</option>
                     </select>
                 </div>
             </div>
             <br>
-            <div class="alert alert-primary mt-4 mb-4 p-2 col-sm-12" role="total">
-                Total a pagar: $
-              </div>
+            <div>
+                <div class="alert alert-primary mt-4 mb-4 p-2 col-sm-12" id="total" role="total">Total a pagar: $</div>
+                <div class="hidden">
+                <p id="pmensajeNombre" class="alert alert-danger" role="alert"></p>
+                <p id="pmensajeApellido" class="alert alert-danger" role="alert"></p>
+                <p id="pmensajeEmail" class="alert alert-danger" role="alert"></p>
+                </div>
+            </div>
             <div class="row">
-                <button class="botonBorrar text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonBorrar">Borrar</button> 
-                <button class="botonResumen text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonResumen">Resumen</button>
+                <button class="btn text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonBorrar">Borrar</button> 
+                <button class="btn text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonResumen">Resumen</button>
             </div>
         </div>
-        <div>
-            <p id="pmensajeNombre" class="text-danger"></p>
-            <p id="pmensajeApellido" class="text-danger"></p>
-            <p id="pmensajeEmail"></p>
-        </div>
-
+        
     </form>
 </section>    
 <br>
@@ -151,6 +151,7 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
 
