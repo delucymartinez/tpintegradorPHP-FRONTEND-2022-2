@@ -43,7 +43,7 @@
         </nav>
     </header>
 <br>    
-<main>
+ <main>
     <main class="container-flex">
             <div class="row">
             <div class="card-group container col-sm-6">
@@ -72,62 +72,63 @@
                     </div>
                 </div>
             </div>
-        </div>    
-           
-         
-      </main>
+        </div>   
+    </main>
 </main> 
 <br>
-<main class="container-sm mt-4 mb-4 p-2">
+<section class="container-sm mt-4 mb-4 p-2"> 
     <div>
       <h5 class="card-title row justify-content-sm-center">VENTA</h5>
       <h2 class="card-title row justify-content-sm-center">VALOR DEL TICKET $200</h2>
     </div>   
-
+</section>
 <section>
-    <form class="form-inline-sm" id="formulario">   
+    <form id="formulario">   
         <div class="form-group mt-4 mb-4 p-2 col-6 mx-auto">
             <div class="row">
                 <div class="col-sm-6"> 
-                <input id="inputNombre" input type="name" class="form-control" placeholder="Nombre"> 
+                    <input id="inputNombre" input type="name" class="form-control" placeholder="Nombre"> 
                 </div>
                 <div class="col-sm-6"> 
-                <input id="inputApellido"  input type="surname" class="form-control" placeholder="Apellido"> 
+                    <input id="inputApellido"  input type="surname" class="form-control" placeholder="Apellido"> 
                 </div>
                 <div class="col-12 mt-2 mb-4"> 
-                <input id="inputEmail" input type="text" class="form-control"  placeholder="Correo"> 
+                    <input id="inputEmail" input type="text" class="form-control"  placeholder="Correo"> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
                     <label for="Cantidad" class="form-label">Cantidad</label>
-                    <input type="cantidad" id="cantidadTickets"class="form-control" placeholder="cantidad"> 
+                    <input type="number" id="numero" class="form-control" placeholder="Cantidad"> 
                 </div>
                 <div class="col-sm-6">
-                    <label for="categoriaTickets" class="form-label" id="categoria">Categoria</label>
-                    <select class="form-select" id="categoriaTickets" aria-label="Default select example">
-                        <option value="SinCategoria" id="SinCategoria">Sin Categoria</option>
-                        <option value="Estudiante" id="Estudiante">Estudiante</option>
-                        <option value="Trainee" id="Trainee">Trainee</option>
-                        <option value="Junior" id="Junior">Junior</option>
+                    <label for="Categoria" class="form-label">Categoria</label>
+                    <select class="form-select" id="tipoTicket" aria-label="form-select-sm example">
+                        <option value="SinCategoria">Sin Categoria</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
                     </select>
                 </div>
             </div>
             <br>
+            <div class="alert alert-primary col-sm-12" id="pesos" role="alert">Total a pagar: $</div>
+            <div class="row">
+                <button type="button" id="botonBorrar" class="botonBorrar text-white mt-4 mb-2 p-0 col-md-6 border-0">Borrar</button>
+                <button type="button" id="botonResumen" class="botonResumen text-white mt-4 mb-2 p-0 col-md-6 border-0">Resumen</button>
+            </div>
             <div>
-                <div class="alert alert-primary mt-4 mb-4 p-2 col-sm-12" id="total" role="total">Total a pagar: $</div>
-                <div class="hidden">
-                <p id="pmensajeNombre" class="alert alert-danger" role="alert"></p>
-                <p id="pmensajeApellido" class="alert alert-danger" role="alert"></p>
-                <p id="pmensajeEmail" class="alert alert-danger" role="alert"></p>
+                <div class="alert">
+                    <div class="row">
+                        <p id="mensajeNombre" class="alert alert-danger col-md-12" role="alert"></p>
+                        <p id="mensajeApellido" class="alert alert-danger col-md-12" role="alert"></p>
+                        <p id="mensajeEmail" class="alert alert-danger col-md-12" role="alert"></p>
+                        
+                    </div>
+                </div>
                 </div>
             </div>
-            <div class="row">
-                <button class="botonBorrar text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonBorrar">Borrar</button> 
-                <button class="botonResumen text-white mt-4 mb-2 p-0 col-sm-6 border-0" id="botonResumen">Resumen</button>
-            </div>
-        </div>
-        
+        </div>  
     </form>
 </section>    
 <br>
@@ -151,8 +152,6 @@
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
 
 
 
