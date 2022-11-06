@@ -1,8 +1,8 @@
 //calcular entradas
 
 const categoriaTickets = document.getElementById("tipoTicket").value;
-const cantidadTickets = document.getElementById("numero").value;
-const total = document.getElementById ("pesos").value;
+const cantidadTickets = parseInt(document.getElementById("numero").value);
+const total = document.getElementById ("pesos");
 const botonResumen = document.getElementById("botonResumen");
 
 botonResumen.addEventListener("click", totalPrecio)
@@ -52,7 +52,7 @@ function validarNombre() {
         mensajeNombre.innerHTML = "Ingrese un nombre válido";
     }
     else {
-        mensajeNombre.hidden;
+        mensajeNombre.innerHTML= "";
     }
 }
 
