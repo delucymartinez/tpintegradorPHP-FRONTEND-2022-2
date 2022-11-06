@@ -1,77 +1,77 @@
 //calcular entradas
 
-const cantidadTickets = document.getElementById("cantidadTickets").value
-const categoriaTickets = document.getElementById("categoriaTickets").value 
-
+const categoriaTickets = document.getElementById("tipoTicket").value;
+const cantidadTickets = document.getElementById("numero").value;
+const total = document.getElementById ("pesos").value;
 const botonResumen = document.getElementById("botonResumen");
-botonResumen.addEventListener("click", totalPrecio);
 
+botonResumen.addEventListener("click", totalPrecio)
 
-const total = document.getElementById("total").value
+var precioTicket = 200 
 
-
-
-function totalPrecio (cantidadTickets, categoriaTickets) {    
-if (categoriaTickets == "Estudiante"){
-    return(40*cantidadTickets).innerHTML;
-} else if(categoriaTickets == "Trainee"){
-    return(100*cantidadTickets).innerHTML;
-} else if(categoriaTickets == "Junior"){
-    return(170*cantidadTickets).innerHTML;
-} else if(categoriaTickets == "SinCategoria"){
-    return(200*cantidadTickets).innerHTML;
-}
+function totalPrecio () {    
+    if (categoriaTickets == "SinCategoria") {
+    return total.innerHTML = (precioTicket*cantidadTickets);
+    } else if (categoriaTickets == "Estudiante") {
+    return total.innerHTML = (precioTicket*0.2*cantidadTickets);
+    } else if (categoriaTickets == "Junior") {
+    return total.innerHTML = (precioTicket*0.8*cantidadTickets);
+    } else if (categoriaTickets == "Trainee") {
+    return total.innerHTML = (precioTicket*0.5*cantidadTickets);
+    } 
 }
 
 
 // Reset formulario
-const formulario = document.getElementById("formulario").value 
+const formulario = document.getElementById("formulario"); 
 const botonBorrar = document.getElementById("botonBorrar");
+
 botonBorrar.addEventListener("click", borrarFormulario)
-function borrarFormulario() {document.getElementById("formulario").reset();}
+function borrarFormulario() {formulario.reset();}
 
 
 //validar formulario 
-inputNombre = document.getElementById("inputNombre");
-inputApellido = document.getElementById("inputApellido");
-inputEmail = document.getElementById("inputEmail");
-pMensajeNombre = document.getElementById("pmensajeNombre");
-pMensajeApellido = document.getElementById("pmensajeApellido");
-pMensajeEmail = document.getElementById("pmensajeEmail");
+const inputNombre = document.getElementById("inputNombre");
+const inputApellido = document.getElementById("inputApellido");
+const inputEmail = document.getElementById("inputEmail");
+const mensajeNombre = document.getElementById("mensajeNombre");
+const mensajeApellido = document.getElementById("mensajeApellido");
+const mensajeEmail = document.getElementById("mensajeEmail");
+
 
 expRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-
-
 
 
 botonResumen.addEventListener("click", validarNombre);
 botonResumen.addEventListener("click", validarApellido);
 botonResumen.addEventListener("click", validarEmail);
 
+
 function validarNombre() {
     if (inputNombre.value.length < 3) {
-        pMensajeNombre.innerHTML = "Ingrese un nombre válido";
+        mensajeNombre.innerHTML = "Ingrese un nombre válido";
     }
     else {
-        pMensajeNombre.innerHTML = "";
+        mensajeNombre.hidden;
     }
 }
 
 function validarApellido() {
-    if (inputNombre.value.length < 3) {
-        pMensajeApellido.innerHTML = "Ingrese un apellido válido";
+    if (inputApellido.value.length < 3) {
+        mensajeApellido.innerHTML = "Ingrese un apellido válido";
     }
     else {
-        pMensajeNombre.innerHTML = "";
+        mensajeApellido.innerHTML = "";
     }
 }
 
 
 function validarEmail() {
-    if (!expRegular.test(InputEmail.value)) {
-        pMensajeEmail.innerHTML = "El email no es válido";
+    if (!expRegular.test(inputEmail.value)) {
+        mensajeEmail.innerHTML = "Ingrese un email válido";
     }
     else {
-        pMensajeEmail.innerHTML = "";
+        mensajeEmail.innerHTML = "";
     }
 }
+
