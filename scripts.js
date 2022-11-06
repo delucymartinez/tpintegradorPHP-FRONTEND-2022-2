@@ -1,7 +1,5 @@
 //calcular entradas
 
-const categoriaTickets = document.getElementById("tipoTicket").value;
-const cantidadTickets = parseInt(document.getElementById("numero").value);
 const total = document.getElementById ("pesos");
 const botonResumen = document.getElementById("botonResumen");
 
@@ -9,15 +7,19 @@ botonResumen.addEventListener("click", totalPrecio)
 
 var precioTicket = 200 
 
-function totalPrecio () {    
+function totalPrecio () {
+    const cantidadTickets = document.getElementById("numero").value;
+    const categoriaTickets = document.getElementById("tipoTicket").value; 
+    cantidad = parseInt(cantidadTickets);
+    
     if (categoriaTickets == "SinCategoria") {
-    return total.innerHTML = (precioTicket*cantidadTickets);
+    total.innerHTML = (precioTicket*cantidad);
     } else if (categoriaTickets == "Estudiante") {
-    return total.innerHTML = (precioTicket*0.2*cantidadTickets);
+    total.innerHTML = (precioTicket*0.2*cantidad);
     } else if (categoriaTickets == "Junior") {
-    return total.innerHTML = (precioTicket*0.8*cantidadTickets);
+    total.innerHTML = (precioTicket*0.8*cantidad);
     } else if (categoriaTickets == "Trainee") {
-    return total.innerHTML = (precioTicket*0.5*cantidadTickets);
+    total.innerHTML = (precioTicket*0.5*cantidad);
     } 
 }
 
